@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14D136" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="ViewController" customModule="AutoLayoutBasics" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="d60-Hz-PjN"/>
+                        <viewControllerLayoutGuide type="bottom" id="ZCV-gk-d0Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ffG-HK-JPJ">
+                                <rect key="frame" x="467" y="47" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ptJ-Ej-dbx">
+                                <rect key="frame" x="247" y="550" width="106" height="30"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="A longer button">
+                                    <color key="titleColor" red="0.50196081399917603" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MLS-eO-UH4">
+                                <rect key="frame" x="193" y="550" width="46" height="30"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JP5-Vr-DbR">
+                                <rect key="frame" x="247" y="481" width="46" height="30"/>
+                                <color key="backgroundColor" red="0.50196081400000003" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="ptJ-Ej-dbx" secondAttribute="bottom" constant="20" id="1nM-8z-7Jo"/>
+                            <constraint firstAttribute="centerX" secondItem="ptJ-Ej-dbx" secondAttribute="centerX" id="Vhi-bp-TfJ"/>
+                            <constraint firstItem="ptJ-Ej-dbx" firstAttribute="leading" secondItem="MLS-eO-UH4" secondAttribute="trailing" constant="8" id="mIA-LR-qkn"/>
+                            <constraint firstAttribute="trailing" secondItem="ffG-HK-JPJ" secondAttribute="trailing" constant="87" id="wLC-xB-Cpc"/>
+                            <constraint firstItem="ZCV-gk-d0Z" firstAttribute="top" secondItem="MLS-eO-UH4" secondAttribute="bottom" constant="20" id="wRW-d5-JM0"/>
+                            <constraint firstItem="JP5-Vr-DbR" firstAttribute="leading" secondItem="ptJ-Ej-dbx" secondAttribute="leading" id="weF-DJ-Vta"/>
+                            <constraint firstItem="ptJ-Ej-dbx" firstAttribute="top" secondItem="JP5-Vr-DbR" secondAttribute="bottom" constant="39" id="xZ1-zM-ndl"/>
+                            <constraint firstItem="ffG-HK-JPJ" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="47" id="z3B-Hs-8zX"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="244.99999999999997" y="336.99999999999994"/>
+        </scene>
+    </scenes>
+</document>
